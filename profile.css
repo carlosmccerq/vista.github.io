@@ -1,0 +1,207 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*_________________________________
+____________CSS reset______________
+_________________________________*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+h1 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+h3 {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.top-box {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 95vw;
+	height: 5vh;
+	margin: auto;
+	margin-top: 1vh;
+}
+
+.top-text {
+	width: 70vw;
+}
+
+.checkmark {
+	height: 15px;
+}
+
+.top-item1, .top-item2, .top-button {
+	height: 3vh;
+}
+
+.profile-box {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 95vw;
+	height: 20vh;
+	margin: auto;
+}
+
+.profile-item, .profile-pic {
+	height: 13vh;
+}
+
+.number-item {
+	text-align: center;
+}
+
+.desc {
+	width: 90vw;
+	margin: auto;
+	margin-bottom: 2vh;
+}
+
+.posts-box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100vw;
+}
+
+.post-item, .post {
+	width: 32vw;
+}
+
+
+/*_________________________________
+__________media queries____________
+_________________________________*/
+@media only screen and (min-width: 481px) {
+	.top-box {
+		width: 47.5vw;
+	}
+
+	.top-text {
+		width: 35vw;
+	}
+
+	.top-item1, .top-item2, .top-button {
+		height: 2vh;
+	}
+
+	.profile-box {
+		width: 47.5vw;
+		height: 18vh;
+	}
+
+	.profile-item, .profile-pic {
+		height: 11vh;
+	}
+
+	.p-info {
+		font-size: 12px;
+	}
+
+	.desc {
+		width: 45vw;
+	}
+
+	.posts-box{
+		width: 50vw;
+		margin: auto;
+	}
+
+	.post-item, .post {
+		width: 16vw;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.top-box {
+		width: 31.6vw;
+	}
+
+	.top-text {
+		width: 23.3vw;
+	}
+
+	.top-item1, .top-item2, .top-button {
+		height: 3vh;
+	}
+
+	.profile-box {
+		width: 31.6vw;
+	}
+
+	.desc {
+		width: 30vw;
+	}
+
+	.posts-box{
+		width: 32vw;
+		margin: auto;
+	}
+
+	.post-item, .post {
+		width: 10.5vw;
+	}
+}

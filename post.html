@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="post.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nome (@nome-vistagram)</title>
+</head>
+
+<body>
+  <div class="back-box">
+    <div class="back">
+      <a href="profile.html"><img src="img/back.png" alt="back button" class="back-button"></a>
+    </div>
+    <div class="back-pub">
+      <h3 class="pub">Publicações</h3>
+    </div>
+  </div>
+
+  <div class="card" id="9">
+
+    <div class="top">
+      <div class="profile-img">
+        <img src="img/profile-pic.png" class="profile-pic" alt="">
+      </div>
+      <div class="profile-name">
+        <a href="profile.html"><h1>Profile_Name <img src="img/checkmark.png" alt="verification badge" class="checkmark"></h1></a>
+        <h2>Porto, Portugal</h2>
+      </div>
+      <div class="options">
+        <img src="img/dot.png" class="options-img" alt="">
+      </div>
+    </div>
+
+    <div class="img-box">
+      <img src="img/bg.jpg" class="img" alt="">
+    </div>
+
+    <div class="action-buttons">
+      <div class="a-button">
+        <img src="img/heart.png" class="heart" onclick="likeButton()" alt="">
+      </div>
+      <div class="a-button">
+        <img src="img/comment.png" class="button" alt="">
+      </div>
+      <div class="a-button-space">
+        <img src="img/share.png" class="button" alt="">
+      </div>
+      <div class="a-button-book">
+        <img src="img/bookmark.png" class="button" alt="">
+      </div>
+    </div>
+
+    <div class="like-comment">
+      <h1 class="likes">3647 gostos</h1>
+      <p><em>Profile_Name</em> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis ornare ante, eu vulputate justo <span>#hashtag1</span> <span>#hashtag2</span></p>
+      <div class="comments">
+        <p><em>nome.influencer</em> Ut convallis ornare ante
+        <br><em>nome.fan</em> eu vulputate justo</p>
+      </div>
+      <h4>mais 209 comentários</h4>
+      <h4 class="time">29 de dezembro</h4>
+    </div>
+
+  </div>
+
+  <div class="card" id="8">
+
+    <div class="top">
+      <div class="profile-img">
+        <img src="img/profile-pic.png" class="profile-pic" alt="">
+      </div>
+      <div class="profile-name">
+        <a href="profile.html"><h1>Profile_Name <img src="img/checkmark.png" alt="verification badge" class="checkmark"></h1></a>
+        <h2>Porto, Portugal</h2>
+      </div>
+      <div class="options">
+        <img src="img/dot.png" class="options-img" alt="">
+      </div>
+    </div>
+
+    <div class="img-box">
+      <img src="img/bg.jpg" class="img" alt="">
+    </div>
+
+    <div class="action-buttons">
+      <div class="a-button">
+        <img src="img/heart.png" class="heart" onclick="likeButton()" alt="">
+      </div>
+      <div class="a-button">
+        <img src="img/comment.png" class="button" alt="">
+      </div>
+      <div class="a-button-space">
+        <img src="img/share.png" class="button" alt="">
+      </div>
+      <div class="a-button-book">
+        <img src="img/bookmark.png" class="button" alt="">
+      </div>
+    </div>
+
+    <div class="like-comment">
+      <h1 class="likes">3647 gostos</h1>
+      <p><em>Profile_Name</em> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut convallis ornare ante, eu vulputate justo <span>#hashtag1</span> <span>#hashtag2</span></p>
+      <div class="comments">
+        <p><em>nome.influencer</em> Ut convallis ornare ante
+        <br><em>nome.fan</em> eu vulputate justo</p>
+      </div>
+      <h4>mais 209 comentários</h4>
+      <h4 class="time">29 de dezembro</h4>
+    </div>
+
+  </div>
+
+    <script>
+      function likeButton() {
+        let heart = document.querySelector('.heart');
+        let likes = document.querySelector('.likes');
+        if (heart.src.match("img/heart.png")) {
+          heart.src = "img/heart_red.png";
+          likes.innerHTML = "3648 gostos";
+        } else {
+          heart.src = "img/heart.png";
+          likes.innerHTML = "3647 gostos"
+        }
+      }
+    </script>
+
+</body>
+
+</html>

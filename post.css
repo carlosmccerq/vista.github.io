@@ -1,0 +1,367 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*_________________________________
+____________CSS reset______________
+_________________________________*/
+
+.back-box {
+	display: flex;
+	flex-wrap: nowrap;
+  justify-content: flex-start;
+	align-items: center;
+	width: 95vw;
+	height: 5vh;
+	margin: auto;
+	margin-top: 1vh;
+}
+
+.back {
+	height: 3vh;
+	width: 10vw;
+}
+
+.back-button {
+	height: 3vh;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+h1 {
+	font-weight: 700;
+	line-height: 1;
+}
+
+h2 {
+	font-size: 11px;
+	font-weight: 300;
+	line-height: 1.2;
+	color: #777;
+}
+
+h3 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+h4 {
+	color: #777;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100vw;
+  margin: auto;
+}
+
+.top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+	width: 95vw;
+	height: 5vh;
+	margin: auto;
+	margin-top: 1vh;
+}
+
+.checkmark {
+	height: 12px;
+}
+
+.profile-img {
+	width: 13vw;
+}
+
+.profile-pic {
+	width: 9vw;
+}
+
+.profile-name {
+	width: 78vw;
+}
+
+.options {
+	width: 4vw;
+}
+
+.options-img {
+	height: 4vh;
+}
+
+.img-box .img {
+	width: 100vw;
+	margin-top: 1vh;
+}
+
+.action-buttons {
+	display: flex;
+  justify-content: flex-start;
+  align-items: center;
+	width: 95vw;
+	margin: auto;
+	height: 5vh;
+}
+
+.a-button {
+	height: 4vh;
+	width: 12vw;
+}
+
+.a-button-space {
+	height: 4vh;
+	width: 63vw;
+}
+
+.a-button-book {
+	height: 4vh;
+	width: 8vw;
+}
+
+.button {
+	height: 4vh;
+}
+
+.heart {
+	height: 4vh;
+}
+
+.user .user-pic {
+	height: 4vh;
+}
+
+.like-comment {
+	width: 95vw;
+	margin: auto;
+	margin-top: 1vh;
+}
+
+em {
+	font-weight: 700;
+}
+
+span {
+	color: darkblue;
+}
+
+.comments .time {
+	margin-top: 0.5vh;
+}
+
+.time {
+	margin-bottom: 2vh;
+}
+
+/*_________________________________
+__________media queries____________
+_________________________________*/
+@media only screen and (min-width: 481px) {
+	.back-box {
+		width: 47.5vw;
+		height: 4vh;
+		margin-bottom: 1.5vh;
+	}
+
+	.back {
+		height: 2vh;
+		width: 5vw;
+	}
+
+	.back-button {
+		height: 2vh;
+	}
+
+	.card {
+	  width: 50vw;
+	}
+
+	.top {
+		width: 47.5vw;
+		height: 4vh;
+	}
+
+	.profile-img {
+		width: 6.5vw;
+	}
+
+	.profile-pic {
+		width: 5vw;
+	}
+
+	.profile-name {
+		width: 39vw;
+	}
+
+	.options {
+		width: 2vw;
+	}
+
+	.options-img {
+		height: 3vh;
+	}
+
+	.img-box .img {
+		width: 50vw;
+		margin: auto;
+		margin-top: 1vh;
+	}
+
+	.action-buttons {
+		height: 4vh;
+		width: 47.5vw;
+	}
+
+	.a-button, .a-button-space, .a-button-book, .heart, .button{
+		height: 3vh;
+	}
+
+	.a-button {
+		width: 6vw;
+	}
+
+	.a-button-space {
+		width: 31vw;
+	}
+
+	.a-button-book {
+		width: 4vw;
+	}
+
+	.like-comment {
+		width: 47.5vw;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.back-box {
+		width: 31.6vw;
+	}
+
+	.back {
+		width: 3vw;
+	}
+
+	.back-button {
+		height: 3vh;
+	}
+
+	.back-pub {
+		height: 3vh;
+	}
+
+	.card {
+	  width: 33vw;
+	}
+
+	.top {
+		width: 31.6vw;
+		margin-top: 2vh;
+	}
+
+	.profile-img {
+		width: 4.1vw;
+	}
+
+	.profile-pic {
+		width: 3vw;
+	}
+
+	.profile-name {
+		width: 26vw;
+	}
+
+	.options {
+		width: 1.5vw;
+	}
+
+	.options-img {
+		height: 3vh;
+	}
+
+	.img-box .img {
+		width: 33vw;
+		margin-top: 2vh;
+	}
+
+	.action-buttons {
+		width: 31.6vw;
+		margin-bottom: 1vh;
+	}
+
+	.a-button, .a-button-space, .a-button-book, .heart, .button {
+		height: 4vh;
+	}
+
+	.a-button {
+		width: 4vw;
+	}
+
+	.a-button-space {
+		width: 21vw;
+	}
+
+	.a-button-book {
+		width: 2vw;
+	}
+
+	.like-comment {
+		width: 31.6vw;
+	}
+}
